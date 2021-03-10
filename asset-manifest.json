@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/xls-reader/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/xls-reader/static/js/main.431a8ee5.chunk.js",
+    "main.js.map": "/xls-reader/static/js/main.431a8ee5.chunk.js.map",
+    "runtime-main.js": "/xls-reader/static/js/runtime-main.dff18142.js",
+    "runtime-main.js.map": "/xls-reader/static/js/runtime-main.dff18142.js.map",
+    "static/js/2.0c7136c0.chunk.js": "/xls-reader/static/js/2.0c7136c0.chunk.js",
+    "static/js/2.0c7136c0.chunk.js.map": "/xls-reader/static/js/2.0c7136c0.chunk.js.map",
+    "static/js/3.d687da7f.chunk.js": "/xls-reader/static/js/3.d687da7f.chunk.js",
+    "static/js/3.d687da7f.chunk.js.map": "/xls-reader/static/js/3.d687da7f.chunk.js.map",
+    "index.html": "/xls-reader/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/xls-reader/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.0c7136c0.chunk.js.LICENSE.txt": "/xls-reader/static/js/2.0c7136c0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/xls-reader/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dff18142.js",
+    "static/js/2.0c7136c0.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.431a8ee5.chunk.js"
+  ]
+}
