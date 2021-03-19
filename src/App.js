@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React, { Suspense, lazy } from 'react';
+// import { ToastContainer } from 'react-toastify';
 import './App.css';
+import routes from './routes';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Spinner from './components/Spinner/Spinner';
+import AppBar from './components/Appbar';
+// import Searchbar from './components/Searchbar';
+// import ImageGallery from './components/ImageGallery';
+// import NotFoundPage from './pages/NotFoundPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const HomePage = lazy(() =>
+  import('./pages/HomePage.js' /* webpackChunkName: "home-page" */),
+);
+// const MovieDetailsPage = lazy(() =>
+//   import(
+//     './pages/MovieDetailsPage.js' /* webpackChunkName: "movie-details-page" */
+//   ),
+// );
+// const MoviesPage = lazy(() =>
+//   import('./pages/MoviesPage.js' /* webpackChunkName: "movies-page" */),
+// );
+
+const App = () => (
+  <>
+    <AppBar />
+
+    <Suspense fallback={<Spinner />}>
+      <Switch>
+        <Route exact path={routes.home} component={HomePage} />
+        {/* <Route path={routes.movieDetails} component={MovieDetailsPage} /> */}
+        {/* <Route exact path={routes.movies} component={MoviesPage} /> */}
+        <Redirect to={routes.home} />
+      </Switch>
+    </Suspense>
+  </>
+);
 
 export default App;
