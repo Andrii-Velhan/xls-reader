@@ -1,24 +1,29 @@
 {
   "files": {
-    "home-page.js": "/xls-reader/static/js/home-page.159f39a5.chunk.js",
-    "home-page.js.map": "/xls-reader/static/js/home-page.159f39a5.chunk.js.map",
+    "home-page.css": "/xls-reader/static/css/home-page.3632f9fe.chunk.css",
+    "home-page.js": "/xls-reader/static/js/home-page.f5f23461.chunk.js",
+    "home-page.js.map": "/xls-reader/static/js/home-page.f5f23461.chunk.js.map",
     "main.css": "/xls-reader/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/xls-reader/static/js/main.93a40828.chunk.js",
-    "main.js.map": "/xls-reader/static/js/main.93a40828.chunk.js.map",
-    "runtime-main.js": "/xls-reader/static/js/runtime-main.d32ec675.js",
-    "runtime-main.js.map": "/xls-reader/static/js/runtime-main.d32ec675.js.map",
-    "static/js/3.30191acb.chunk.js": "/xls-reader/static/js/3.30191acb.chunk.js",
-    "static/js/3.30191acb.chunk.js.map": "/xls-reader/static/js/3.30191acb.chunk.js.map",
-    "static/js/4.3b799669.chunk.js": "/xls-reader/static/js/4.3b799669.chunk.js",
-    "static/js/4.3b799669.chunk.js.map": "/xls-reader/static/js/4.3b799669.chunk.js.map",
+    "main.js": "/xls-reader/static/js/main.ff10d7a2.chunk.js",
+    "main.js.map": "/xls-reader/static/js/main.ff10d7a2.chunk.js.map",
+    "runtime-main.js": "/xls-reader/static/js/runtime-main.35b85884.js",
+    "runtime-main.js.map": "/xls-reader/static/js/runtime-main.35b85884.js.map",
+    "static/js/3.9d45d6da.chunk.js": "/xls-reader/static/js/3.9d45d6da.chunk.js",
+    "static/js/3.9d45d6da.chunk.js.map": "/xls-reader/static/js/3.9d45d6da.chunk.js.map",
+    "static/js/4.00243f08.chunk.js": "/xls-reader/static/js/4.00243f08.chunk.js",
+    "static/js/4.00243f08.chunk.js.map": "/xls-reader/static/js/4.00243f08.chunk.js.map",
+    "static/js/5.5244a352.chunk.js": "/xls-reader/static/js/5.5244a352.chunk.js",
+    "static/js/5.5244a352.chunk.js.map": "/xls-reader/static/js/5.5244a352.chunk.js.map",
     "index.html": "/xls-reader/index.html",
+    "static/css/home-page.3632f9fe.chunk.css.map": "/xls-reader/static/css/home-page.3632f9fe.chunk.css.map",
     "static/css/main.9d5b29c0.chunk.css.map": "/xls-reader/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/3.30191acb.chunk.js.LICENSE.txt": "/xls-reader/static/js/3.30191acb.chunk.js.LICENSE.txt"
+    "static/js/3.9d45d6da.chunk.js.LICENSE.txt": "/xls-reader/static/js/3.9d45d6da.chunk.js.LICENSE.txt",
+    "static/js/4.00243f08.chunk.js.LICENSE.txt": "/xls-reader/static/js/4.00243f08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d32ec675.js",
-    "static/js/3.30191acb.chunk.js",
+    "static/js/runtime-main.35b85884.js",
+    "static/js/3.9d45d6da.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.93a40828.chunk.js"
+    "static/js/main.ff10d7a2.chunk.js"
   ]
 }
