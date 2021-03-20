@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 // import { toast } from 'react-toastify';
-// import './SearchBar.scss';
+import './DragAndDrop.css';
 // import PropTypes from 'prop-types';
 
 export default class DragAndDrop extends Component {
   state = {
     drag: false,
+		// filename: '',
   };
   dropRef = React.createRef();
   handleDrag = e => {
@@ -34,6 +35,7 @@ export default class DragAndDrop extends Component {
     this.setState({ drag: false });
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       this.props.handleDrop(e.dataTransfer.files);
+			// this.setState({ filename: e.dataTransfer.files.name });
       e.dataTransfer.clearData();
       this.dragCounter = 0;
     }
@@ -53,20 +55,18 @@ export default class DragAndDrop extends Component {
     div.removeEventListener('drop', this.handleDrop);
   }
   render() {
+		const {drag, filename} = this.state;
     return (
       <div
-        style={{
-          display: 'inline-block',
-          position: 'relative',
-          padding: '15px',
-          margin: '15px',
-          border: '1px dashed red',
-          backgroundColor: 'rgba(220,255,255, 0.8)',
-        }}
+				style={{display: 'inline-block', position: 'relative', border: '2px dashed red',
+				backgroundColor: 'rgba(200,255,255, 0.8)',}}
         ref={this.dropRef}
       >
-        {this.state.drag && (
-          <div
+        {drag && (
+          <div 
+					// className={
+					// 	drag ? 'filedrop drag' : {filename} ? 'filedrop ready' : 'filedrop'
+					// }
             style={{
               border: '4px dashed grey',
               backgroundColor: 'rgba(200,255,255, 0.8)',

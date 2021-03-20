@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DragAndDrop from '../components/DragAndDrop';
+import RenderTable from '../components/RenderTable';
+import * as XLSX from "xlsx";
 
 class FileList extends Component {
   state = {
@@ -21,13 +23,16 @@ class FileList extends Component {
   };
   render() {
     return (
-      <DragAndDrop eInput handleDrop={this.handleDrop}>
-        <div style={{ minHeight: 300, width: 650 }}>
-          {this.state.files.map(file => (
-            <div>{file}</div>
-          ))}
-        </div>
-      </DragAndDrop>
+      <>
+			<DragAndDrop eInput handleDrop={this.handleDrop}>
+			<div style={{ minHeight: 300, width: 650 }}>
+				{this.state.files.map(file => (
+					<div>{file}</div>
+				))}
+			</div>
+		</DragAndDrop>
+		<RenderTable></RenderTable>
+		</>
     );
   }
 }
