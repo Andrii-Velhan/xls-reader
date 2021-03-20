@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import FileInput from '../components/FileInput';
+import DragAndDrop from '../components/DragAndDrop';
 
 class FileList extends Component {
   state = {
     files: [
-      'nice.pdf',
-      'verycool.jpg',
-      'amazing.png',
-      'goodstuff.mp3',
-      'thankyou.doc',
+      // 'nice.pdf',
+      // 'verycool.jpg',
+      // 'amazing.png',
+      // 'goodstuff.mp3',
+      // 'thankyou.doc',
     ],
   };
   handleDrop = files => {
@@ -21,13 +21,13 @@ class FileList extends Component {
   };
   render() {
     return (
-      <FileInput handleDrop={this.handleDrop}>
+      <DragAndDrop eInput handleDrop={this.handleDrop}>
         <div style={{ minHeight: 300, width: 650 }}>
           {this.state.files.map(file => (
             <div>{file}</div>
           ))}
         </div>
-      </FileInput>
+      </DragAndDrop>
     );
   }
 }

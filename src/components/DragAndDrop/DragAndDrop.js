@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import './SearchBar.scss';
 // import PropTypes from 'prop-types';
 
-export default class FileInput extends Component {
+export default class DragAndDrop extends Component {
   state = {
     drag: false,
   };
